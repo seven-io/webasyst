@@ -1,24 +1,51 @@
-<img alt='' src="https://www.seven.io/wp-content/uploads/Logo.svg" width="250" />
+<p align="center">
+  <img src="https://www.seven.io/wp-content/uploads/Logo.svg" width="250" alt="seven logo" />
+</p>
 
-# SMS adapter for [Webasyst](https://www.webasyst.com/)
+<h1 align="center">seven SMS for Webasyst</h1>
+
+<p align="center">
+  SMS adapter for <a href="https://www.webasyst.com/">Webasyst</a> - plugs seven into the Webasyst SMS subsystem.
+</p>
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-teal.svg" alt="MIT License" /></a>
+  <img src="https://img.shields.io/badge/Webasyst-plugin-blue" alt="Webasyst plugin" />
+  <img src="https://img.shields.io/badge/PHP-7.4%2B-purple" alt="PHP 7.4+" />
+</p>
+
+---
+
+## Features
+
+- **SMS Adapter** - Adds seven as a selectable provider in **Settings > SMS**
+- **Drop-in Install** - Standard Webasyst SMS plugin layout
+
+## Prerequisites
+
+- A [Webasyst](https://www.webasyst.com/) installation
+- A [seven account](https://www.seven.io/) with API key ([How to get your API key](https://help.seven.io/en/developer/where-do-i-find-my-api-key))
 
 ## Installation
-1. Open a terminal and go to your Webasyst SMS plugin directory, usually `<webasyst-root>/wa-plugins/sms`.
-2. Clone the repository by running `git clone https://github.com/seven-io/webasyst seven`.
 
-## Setup
+```bash
+cd <webasyst-root>/wa-plugins/sms
+git clone https://github.com/seven-io/webasyst seven
+```
 
-1. Open your Webasyst admin panel and go to *Settings->SMS*.
-2. Locate the provider *seven.io*, enter your API key and confirm by clicking *Save*.
+## Configuration
+
+1. Open the Webasyst admin and go to **Settings > SMS**.
+2. Find the *seven.io* provider, paste your seven API key and click **Save**.
 
 ## Testing
 
-You can test SMS dispatch by navigating to *SMS->SMS templates*. Click the *Check sending* button and submit the form.
+Open **SMS > SMS templates**, click **Check sending** and submit the form to verify dispatch.
 
 ## Support
 
-Need help? Feel free to [contact us](https://www.sms77.io/en/company/contact/).
+Need help? Feel free to [contact us](https://www.seven.io/en/company/contact/) or [open an issue](https://github.com/seven-io/webasyst/issues).
 
 ## License
 
-[![MIT](https://img.shields.io/badge/License-MIT-teal.svg)](LICENSE)
+[MIT](LICENSE)
